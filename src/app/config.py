@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 # ===== Projeto =====
-BASE_DIR = Path(__file__).resolve().parents[3]
+BASE_DIR = Path(__file__).resolve().parents[2]  # eleicoes-dashboard/
 DB_PATH = BASE_DIR / "db" / "eleicoes.duckdb"
 DATA_DIR = BASE_DIR / "data" / "tse"
 
