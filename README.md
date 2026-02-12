@@ -343,14 +343,12 @@ Sugestões de melhorias:
 
 ## 📄 Licença
 
-[Escolha uma licença - ex: MIT, Apache 2.0]
 
 ---
 
 ## 📧 Contato
 
-- **Email**: seu-email@example.com
-- **GitHub**: https://github.com/seu-usuario
+- **GitHub**: https://github.com/AGDM97
 
 ---
 
