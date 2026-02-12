@@ -6,6 +6,20 @@ Dashboard interativo para análise de dados eleitorais brasileiros de 2022 usand
 
 ---
 
+## 🎬 Do Zero ao Dashboard em 30 Segundos
+
+Não quer ler documentação? Copie e cole um desses comandos:
+
+| SO | Comando |
+|---|---|
+| **🪟 Windows** | `.\setup-e-run.ps1` |
+| **🐧 Linux** | `chmod +x setup-e-run.sh && ./setup-e-run.sh` |
+| **🍎 macOS** | `chmod +x setup-e-run.sh && ./setup-e-run.sh` |
+
+**Resultado:** Dashboard aberto em http://localhost:8501 com dados de 5.088+ candidatos brasileiros ✨
+
+---
+
 ## ⚡ Inicio Rápido (30 segundos)
 
 > **Quer começar agora?** Veja [**QUICKSTART.md**](QUICKSTART.md) ou [**INSTALLATION_GUIDE.md**](INSTALLATION_GUIDE.md) para instrução passo-a-passo.
