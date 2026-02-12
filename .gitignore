@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Streamlit
+.streamlit/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# Data (optional, keep local only)
+data/tse/bem_candidato_*/
+data/tse/consulta_cand_*/
+data/tse/prestacao_contas_*/
+data/tse/votacao_candidato_*/
+data/tse/*.zip
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Folders
+.venv/
+db/eleicoes.duckdb
+db/eleicoes.duckdb.wal
