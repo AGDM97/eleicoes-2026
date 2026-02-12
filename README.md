@@ -6,6 +6,25 @@ Dashboard interativo para análise de dados eleitorais brasileiros de 2022 usand
 
 ---
 
+## ⚡ Inicio Rápido (30 segundos)
+
+> **Quer começar agora?** Veja [**QUICKSTART.md**](QUICKSTART.md) ou [**INSTALLATION_GUIDE.md**](INSTALLATION_GUIDE.md) para instrução passo-a-passo.
+
+**Windows (PowerShell):**
+```powershell
+.\setup-e-run.ps1
+```
+
+**Linux/macOS:**
+```bash
+chmod +x setup-e-run.sh
+./setup-e-run.sh
+```
+
+Dashboard abre automaticamente em **http://localhost:8501** ✨
+
+---
+
 ## 🎯 Funcionalidades
 
 ### Dashboard (Streamlit)
@@ -32,63 +51,9 @@ Dashboard interativo para análise de dados eleitorais brasileiros de 2022 usand
 
 ---
 
-## 🚀 Início Rápido
+## � Configuração Manual (Avançado)
 
-### 1. Clonar repositório
-```bash
-git clone https://github.com/seu-usuario/eleicoes-dashboard.git
-cd eleicoes-dashboard
-```
-
-### 2. Criar ambiente virtual
-```bash
-# Windows (PowerShell)
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
-# Linux/macOS
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Instalar dependências
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Preparar dados (primeiras execuções)
-```bash
-# Baixa e carrega dados candidatos
-python -m src.app.etl.load_candidates_2022_sp_dep_fed
-
-# Carrega dados de bens
-python -m src.app.etl.load_assets_2022_sp_dep_fed
-
-# Carrega dados de votos
-python -m src.app.etl.load_votes_2022_sp_dep_fed
-
-# Carrega dados de finanças
-python -m src.app.etl.load_finance_2022_sp_dep_fed
-
-# Agregações de finanças
-python scripts/rebuild_finance_agg.py
-```
-
-### 5. Iniciar Backend (Terminal 1)
-```bash
-python -m uvicorn src.app.api.main:app --host 127.0.0.1 --port 8000 --reload
-```
-
-### 6. Iniciar Frontend (Terminal 2)
-```bash
-streamlit run dashboard/streamlit_app.py
-```
-
-Acesse: http://localhost:8501
-
----
-
-## 🔧 Configuração
+Se preferir executar passo a passo, veja [**TESTE_RAPIDO.md**](TESTE_RAPIDO.md).
 
 ### Variáveis de Ambiente
 
